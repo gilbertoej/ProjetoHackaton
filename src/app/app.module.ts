@@ -15,6 +15,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { LeisPageComponent } from './components/leis-page/leis-page.component';
 import { InstituicoesPageComponent } from './components/instituicoes-page/instituicoes-page.component';
 import { ContatoPageComponent } from './components/contato-page/contato-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContatoPageComponent } from './components/contato-page/contato-page.com
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

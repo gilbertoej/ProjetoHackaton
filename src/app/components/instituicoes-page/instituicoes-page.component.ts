@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InstituicoesApiModel } from 'src/app/service/instituicoes-api-model';
+import { InstituicoesApiService } from 'src/app/service/instituicoes-api.service';
 
 @Component({
   selector: 'app-instituicoes-page',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstituicoesPageComponent implements OnInit {
 
-  constructor() { }
+  listadeInstituicoes: InstituicoesApiModel[] = [];
+
+
+
+  constructor(public InstituicoesApi: InstituicoesApiService) { }
 
   ngOnInit(): void {
+    this.InstituicoesApi.get().subscribe({
+      next: (retornodaApi2) => {
+        this.listadeInstituicoes = retornodaApi2;
+      }
+    });
   }
 
 }

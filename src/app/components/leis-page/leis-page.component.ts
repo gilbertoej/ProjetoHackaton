@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LeisApiModel } from 'src/app/service/leis-api-model';
+import { LeisApiService } from 'src/app/service/leis-api.service';
 
 @Component({
   selector: 'app-leis-page',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeisPageComponent implements OnInit {
 
-  constructor() { }
+  ListadeLeis: LeisApiModel[] = [];
+
+  constructor(public LeisApi: LeisApiService) { }
 
   ngOnInit(): void {
+    this.LeisApi.get().subscribe({
+      next: (retornodaApi) => {
+        this.ListadeLeis = retornodaApi;
+      }
+    });
   }
 
 }
