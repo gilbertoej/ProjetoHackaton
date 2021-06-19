@@ -18,6 +18,7 @@ import { ContatoPageComponent } from './components/contato-page/contato-page.com
 import { HttpClientModule } from '@angular/common/http';
 import { LeisCardComponent } from './components/leis-card/leis-card.component';
 import { MatCardModule } from '@angular/material/card';
+import { TimerComponent } from './components/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatCardModule } from '@angular/material/card';
     LeisPageComponent,
     InstituicoesPageComponent,
     ContatoPageComponent,
-    LeisCardComponent
+    LeisCardComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,

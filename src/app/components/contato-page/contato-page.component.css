@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 50vh;
+}
+.wrapper p {
+ font-weight: bold;
+ text-align: center;
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-color: grey;
+}
+
+.wrapper h1 {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+ }
+
+.wrapper h2 {
+  font-weight: bold;
+  text-align: center;
+  color: #EB71A2;
+ }
+
+ .wrapper h3 {
+  font-weight: bold;
+  text-align: center;
+ }
+
+ .wrapper span {
+   text-align: center;
+   font-size: 12px;
+ }
+
+.wrapper img{
+  max-width: 80%;
+}
