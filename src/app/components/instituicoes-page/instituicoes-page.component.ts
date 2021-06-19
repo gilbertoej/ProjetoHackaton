@@ -9,7 +9,12 @@ import { InstituicoesApiService } from 'src/app/service/instituicoes-api.service
 })
 export class InstituicoesPageComponent implements OnInit {
 
-  listadeInstituicoes: InstituicoesApiModel[] = [];
+  listaDeInstituicoes: InstituicoesApiModel[] = [{
+    descricao: '',
+    imagem: '',
+    nome: '',
+    site: ''
+  }];
 
 
 
@@ -18,7 +23,7 @@ export class InstituicoesPageComponent implements OnInit {
   ngOnInit(): void {
     this.InstituicoesApi.get().subscribe({
       next: (retornodaApi2) => {
-        this.listadeInstituicoes = retornodaApi2;
+        this.listaDeInstituicoes = retornodaApi2;
       }
     });
   }
