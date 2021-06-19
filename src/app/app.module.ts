@@ -16,6 +16,8 @@ import { LeisPageComponent } from './components/leis-page/leis-page.component';
 import { InstituicoesPageComponent } from './components/instituicoes-page/instituicoes-page.component';
 import { ContatoPageComponent } from './components/contato-page/contato-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LeisCardComponent } from './components/leis-card/leis-card.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomePageComponent,
     LeisPageComponent,
     InstituicoesPageComponent,
-    ContatoPageComponent
+    ContatoPageComponent,
+    LeisCardComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
