@@ -18,6 +18,8 @@ import { ContatoPageComponent } from './components/contato-page/contato-page.com
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { InstituicoesCardComponent } from './components/instituicoes-card/instituicoes-card.component';
+import { LeisCardComponent } from './components/leis-card/leis-card.component';
+import { TimerComponent } from './components/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { InstituicoesCardComponent } from './components/instituicoes-card/instit
     LeisPageComponent,
     InstituicoesPageComponent,
     ContatoPageComponent,
-    InstituicoesCardComponent
+    InstituicoesCardComponent,
+    LeisCardComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,

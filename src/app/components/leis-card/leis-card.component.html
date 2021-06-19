@@ -1,0 +1,8 @@
+<mat-card>
+  <div *ngFor="let item of leis" class="principal">
+    <h2>{{item.nome}}</h2>
+    <p><strong> Descrição : </strong>{{item.descricao}}</p>
+    <p><strong> Data : </strong>{{item.data}}</p>
+    <p><strong> Site : </strong><a [href]="item.site" >{{item.nome}}</a></p>
+  </div>
+</mat-card>

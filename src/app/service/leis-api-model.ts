@@ -1,6 +1,6 @@
 export interface LeisApiModel {
   data: string;
-  descrição: string;
+  descricao: string;
   nome: string;
   site: string;
 
