@@ -16,8 +16,9 @@ import { LeisPageComponent } from './components/leis-page/leis-page.component';
 import { InstituicoesPageComponent } from './components/instituicoes-page/instituicoes-page.component';
 import { ContatoPageComponent } from './components/contato-page/contato-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LeisCardComponent } from './components/leis-card/leis-card.component';
 import { MatCardModule } from '@angular/material/card';
+import { InstituicoesCardComponent } from './components/instituicoes-card/instituicoes-card.component';
+import { LeisCardComponent } from './components/leis-card/leis-card.component';
 import { TimerComponent } from './components/timer/timer.component';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { TimerComponent } from './components/timer/timer.component';
     LeisPageComponent,
     InstituicoesPageComponent,
     ContatoPageComponent,
+    InstituicoesCardComponent,
     LeisCardComponent,
     TimerComponent
   ],

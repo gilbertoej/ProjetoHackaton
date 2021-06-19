@@ -1,0 +1,8 @@
+<mat-card *ngFor="let item of instituicao" style="background-color:#F5F5F5;">
+  <section>
+    <img class="imagem" [src]="item.imagem">
+    <p class="titulo"><b>{{item.nome}}</b></p>
+    <p style="text-align: justify;">{{item.descricao}}</p>
+    <p style="text-align: center; color: red"><b>Acesse por <a href="{{item.site}}" target="_blank">aqui</a>.</b></p>
+  </section>
+</mat-card>
